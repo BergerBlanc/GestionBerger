@@ -1,0 +1,283 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GestionBerger
+build_property.RootNamespace = GestionBerger
+build_property.ProjectDir = F:\AEC\Session\Session 5\420-A23-BB PROJET DE FIN D'ÉTUDES\Stage\Projet\NouveauLeberger\GestionBerger\GestionBerger\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\AEC\Session\Session 5\420-A23-BB PROJET DE FIN D'ÉTUDES\Stage\Projet\NouveauLeberger\GestionBerger\GestionBerger
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Administration/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Animal/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Animal/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Animal/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Animal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Animal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Citoyen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0b3llblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Citoyen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0b3llblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Citoyen/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0b3llblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Citoyen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0b3llblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Citoyen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0b3llblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Couleur/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bGV1clxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Couleur/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bGV1clxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Couleur/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bGV1clxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Couleur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bGV1clxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Cueillette/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlaWxsZXR0ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Cueillette/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlaWxsZXR0ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Cueillette/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlaWxsZXR0ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Cueillette/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlaWxsZXR0ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Cueillette/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlaWxsZXR0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Departement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Departement/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Departement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Departement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Employe/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Employe/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Employe/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Employe/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Employe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Espece/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Espece/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Espece/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Espece/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/EtatSante/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRhdFNhbnRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/EtatSante/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRhdFNhbnRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/EtatSante/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRhdFNhbnRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/EtatSante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRhdFNhbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Intervention/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Intervention/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Intervention/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Intervention/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Micropuce/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWljcm9wdWNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Micropuce/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWljcm9wdWNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Micropuce/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWljcm9wdWNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Micropuce/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWljcm9wdWNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Micropuce/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWljcm9wdWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoYXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoYXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoYXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoYXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoaWVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoaWVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoaWVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/RaceChien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZUNoaWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Ville/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Ville/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Ville/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Ville/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Ville/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/NouveauLeberger/GestionBerger/GestionBerger/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bc3v90c5oa

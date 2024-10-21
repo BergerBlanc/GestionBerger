@@ -1,0 +1,104 @@
+﻿@model GestionBerger.Models.Cueillette
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Cueillette</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdCueillette" />
+            <div class="form-group">
+                <label asp-for="IdCitoyen" class="control-label"></label>
+                <input asp-for="IdCitoyen" class="form-control" />
+                <span asp-validation-for="IdCitoyen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHeureRecu" class="control-label"></label>
+                <input asp-for="DateHeureRecu" class="form-control" />
+                <span asp-validation-for="DateHeureRecu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatePrevu" class="control-label"></label>
+                <input asp-for="DatePrevu" class="form-control" />
+                <span asp-validation-for="DatePrevu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Espece" class="control-label"></label>
+                <input asp-for="Espece" class="form-control" />
+                <span asp-validation-for="Espece" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Race" class="control-label"></label>
+                <input asp-for="Race" class="form-control" />
+                <span asp-validation-for="Race" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Couleur" class="control-label"></label>
+                <input asp-for="Couleur" class="form-control" />
+                <span asp-validation-for="Couleur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sexe" class="control-label"></label>
+                <input asp-for="Sexe" class="form-control" />
+                <span asp-validation-for="Sexe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adresse" class="control-label"></label>
+                <input asp-for="Adresse" class="form-control" />
+                <span asp-validation-for="Adresse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ville" class="control-label"></label>
+                <input asp-for="Ville" class="form-control" />
+                <span asp-validation-for="Ville" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intersection" class="control-label"></label>
+                <input asp-for="Intersection" class="form-control" />
+                <span asp-validation-for="Intersection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intervention" class="control-label"></label>
+                <input asp-for="Intervention" class="form-control" />
+                <span asp-validation-for="Intervention" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="complete" /> @Html.DisplayNameFor(model => model.complete)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHeureFinalise" class="control-label"></label>
+                <input asp-for="DateHeureFinalise" class="form-control" />
+                <span asp-validation-for="DateHeureFinalise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentaires" class="control-label"></label>
+                <input asp-for="Commentaires" class="form-control" />
+                <span asp-validation-for="Commentaires" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

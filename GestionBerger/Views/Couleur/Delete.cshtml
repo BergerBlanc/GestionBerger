@@ -1,0 +1,38 @@
+﻿@model GestionBerger.Models.Couleur
+
+@{
+    ViewData["Title"] = "Supprimer";
+}
+
+<h1>Supprimer</h1>
+
+<h3>Voulez-vous vraiment supprimer cette Couleur?</h3>
+<div>
+    <h4>Couleur</h4>
+    <hr />
+    <dl class="row">
+        <dl class="row">
+            <dt class="col-sm-2">
+                Nom de la couleur:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NomCouleur)
+            </dd>
+    </dl>
+    <br/>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdCouleur" />
+        <input type="submit" value="Supprimer" class="btn btn-danger"/> 
+        <button type="submit" class="btn btn-info">Précédent</button>
+    </form>
+    
+    <br/>
+    <div>
+        <br/>
+        <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+
+            <button type="submit" class="btn btn-secondary">Menu Principal</button>
+        </form>
+    </div>
+    
+</div>

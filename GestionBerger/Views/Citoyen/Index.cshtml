@@ -1,0 +1,83 @@
+﻿@model IEnumerable<GestionBerger.Models.Citoyen>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    <form asp-action="Create" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-success">Nouveau Citoyen</button>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                Nom
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone)
+            </th>
+            
+            <th>
+                Adresse
+            </th>
+            <th>
+                Ville
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomCitoyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone)
+            </td>
+            
+                <td>
+                    @string.Format("{0} {1}", item.Civique, item.Rue) <!-- Concaténation de Civique et Rue -->
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            
+            
+            <td>
+                    <form asp-action="Edit" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCitoyen" value="@item.IdCitoyen" />
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                    </form>
+
+                    <form asp-action="Details" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCitoyen" value="@item.IdCitoyen" />
+                        <button type="submit" class="btn btn-info">Details</button>
+                    </form>
+
+                    <form asp-action="Delete" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCitoyen" value="@item.IdCitoyen" />
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                    </form>
+            </td>
+        </tr>
+        }
+      
+    </tbody>
+    
+    
+</table>
+<div>
+    
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Menu Principal</button>
+    </form>
+</div>

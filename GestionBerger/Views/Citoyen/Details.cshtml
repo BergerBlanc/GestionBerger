@@ -1,0 +1,78 @@
+﻿@model GestionBerger.Models.Citoyen
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Citoyen</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nom: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NomCitoyen)
+        </dd>
+        <dt class = "col-sm-2">
+            Téléphone: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+        <dt class = "col-sm-2">
+            Téléphone 2:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone2)
+        </dd>
+        
+        <dt class = "col-sm-2">
+            Numéro Civique:  
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Civique)
+        </dd>
+        <dt class="col-sm-2">
+            Rue:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rue)
+        </dd>
+        <dt class = "col-sm-2">
+            Ville: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ville)
+        </dd>
+        <dt class = "col-sm-2">
+            Code Postal: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CodePostal)
+        </dd>
+        <dt class = "col-sm-2">
+            Commentaires: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Commentaires)
+        </dd>
+    </dl>
+</div>
+<div>
+    <br/>
+    <form asp-action="Edit" method="get" style="display:inline;">
+        <input type="hidden" name="IdCitoyen" value="@Model.IdCitoyen" />
+        <button type="submit" class="btn btn-success">Modifier</button>
+    </form>
+    
+</div>
+
+<div>
+    <form asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Retour à la Liste</button>
+    </form>
+</div>

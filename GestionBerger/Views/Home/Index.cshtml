@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <img src="~/images/logob.png" alt="Logo" style="height: 250px;" />
+
+    <h1 style="font-size: 40px; font-weight: bold; color:blue; text-decoration: underline;">Le Berger Blanc</h1>
+
+    <ul style="width: fit-content; margin: 0 auto; text-align: left;">
+        <li style="margin: 10px 0;">
+            <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Citoyen" asp-action="Index">Gestion des Citoyens</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Animal" asp-action="Index">Gestion des Animaux</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Cueillette" asp-action="Index">Gestion des Cueillettes</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Administration" asp-action="Index">Administration</a>
+        </li>
+    </ul>
+</div>

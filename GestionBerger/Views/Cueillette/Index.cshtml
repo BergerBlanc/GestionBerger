@@ -1,0 +1,119 @@
+﻿@model IEnumerable<GestionBerger.Models.Cueillette>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCitoyen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateHeureRecu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatePrevu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Espece)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Race)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Couleur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adresse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ville)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Intersection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Intervention)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.complete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateHeureFinalise)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Commentaires)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCitoyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateHeureRecu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatePrevu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Espece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Race)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Couleur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intersection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intervention)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.complete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateHeureFinalise)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Commentaires)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCueillette">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCueillette">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCueillette">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

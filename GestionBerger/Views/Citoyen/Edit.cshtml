@@ -1,0 +1,74 @@
+﻿@model GestionBerger.Models.Citoyen
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Citoyen</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdCitoyen" />
+            <div class="form-group">
+                <label asp-for="Telephone" class="control-label"></label>
+                <input asp-for="Telephone" class="form-control" />
+                <span asp-validation-for="Telephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telephone2" class="control-label"></label>
+                <input asp-for="Telephone2" class="form-control" />
+                <span asp-validation-for="Telephone2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomCitoyen" class="control-label"></label>
+                <input asp-for="NomCitoyen" class="form-control" />
+                <span asp-validation-for="NomCitoyen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Civique" class="control-label">Numéro civique</label>
+                <input asp-for="Civique" class="form-control" />
+                <span asp-validation-for="Civique" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Rue" class="control-label">Rue</label>
+                <input asp-for="Rue" class="form-control" />
+                <span asp-validation-for="Rue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ville" class="control-label"></label>
+                <input asp-for="Ville" class="form-control" />
+                <span asp-validation-for="Ville" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodePostal" class="control-label"></label>
+                <input asp-for="CodePostal" class="form-control" />
+                <span asp-validation-for="CodePostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentaires" class="control-label"></label>
+                <input asp-for="Commentaires" class="form-control" />
+                <span asp-validation-for="Commentaires" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Sauvegarder" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <form asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Retour à la Liste</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

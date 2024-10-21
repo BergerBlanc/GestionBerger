@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Menu administrateurs";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+
+    <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Couleur" asp-action="Index">Gestion des couleurs</a>
+    <li><a href="@Url.Action("Index", "Departement")">Gestion des départements</a></li>
+    <li><a href="@Url.Action("Index", "Employe")">Gestion des employés</a></li>
+    <li><a href="@Url.Action("Index", "Espece")">Gestion des espèces</a></li>
+    <li><a href="@Url.Action("Index", "EtatSante")">Gestion des états de santé</a></li>
+    <li><a href="@Url.Action("Index", "Intervention")">Gestion des interventions</a></li>
+    <li><a href="@Url.Action("Index", "RaceChien")">Gestion des races de chiens</a></li>
+    <li><a href="@Url.Action("Index", "RaceChat")">Gestion des races de chats</a></li>
+    <li><a href="@Url.Action("Index", "Ville")">Gestion des villes</a></li>
+    @* <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Citoyen" asp-action="Index">Gestion des Citoyens</a>
+   
+    
+    <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Animal" asp-action="Index">Gestion des Animaux</a>
+
+
+
+    <a class="nav-link" style="font-size: 26px; font-weight: bold; color: #fab152;" asp-area="" asp-controller="Cueillette" asp-action="Index">Gestion des Cueillettes</a>
+    *@
+<div>
+    <br />
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Menu Principal</button>
+    </form>
+</div>
+

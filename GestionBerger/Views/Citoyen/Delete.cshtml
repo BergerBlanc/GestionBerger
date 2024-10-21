@@ -1,0 +1,71 @@
+﻿@model GestionBerger.Models.Citoyen
+
+@{
+    ViewData["Title"] = "Supprimer";
+}
+
+<h1>Delete</h1>
+
+<h3>Voulez-vous vraiment supprimer ce Citoyen?</h3>
+<div>
+    <h4>Citoyen</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nom:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NomCitoyen)
+        </dd>
+        <dt class="col-sm-2">
+            Téléphone:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+        <dt class="col-sm-2">
+            Téléphone 2:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telephone2)
+        </dd>
+
+        <dt class="col-sm-2">
+            Numéro Civique:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Civique)
+        </dd>
+        <dt class="col-sm-2">
+            Nom de Rue:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rue)
+        </dd>
+        <dt class="col-sm-2">
+            Ville:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ville)
+        </dd>
+        <dt class="col-sm-2">
+            Code Postal:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodePostal)
+        </dd>
+        <dt class="col-sm-2">
+            Commentaires:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Commentaires)
+        </dd>
+    </dl>
+    <br />
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdCitoyen" />
+        <input type="submit" value="Supprimer" class="btn btn-danger" />
+        
+        <a asp-action="Index" class="btn btn-info">Annuler</a>
+    </form>
+</div>
