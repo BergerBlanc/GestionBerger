@@ -20,3 +20,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+/* Ajoutez ces classes dans votre fichier CSS global */
+.scrollable-table {
+    max-height: 600px; /* Ajustez cette hauteur selon vos besoins */
+    overflow-y: hidden; /* Pas de défilement ici */
+}
+
+.custom-thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.custom-tbody {
+    display: block;
+    max-height: 600px;  /* La hauteur maximale pour le défilement */
+    overflow-y: auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.custom-tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}

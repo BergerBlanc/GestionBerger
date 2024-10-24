@@ -4,32 +4,45 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Gestion des RaceChiens</h1>
+<br />
+<div>
+    <form asp-action="Create" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-success">Nouvelle RaceChien</button>
+    </form>
+    <form asp-controller="Administration" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-info">Précédent</button>
+    </form>
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-secondary">Menu Principal</button>
+    </form>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NomRaceChien)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomRaceChien)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdRaceChien">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdRaceChien">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdRaceChien">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!-- Table header and scrolling body -->
+<div class="scrollable-table">
+    <table class="table">
+        <thead class="custom-thead">
+            <tr class="custom-tr">
+                <th>Nom de la Race de Chien</th>
+            </tr>
+        </thead>
+        <tbody class="custom-tbody">
+            @foreach (var item in Model)
+            {
+                <tr class="custom-tr">
+                    <td>@item.NomRaceChien</td>
+                    <td>
+                        <form asp-action="Edit" method="get" style="display:inline;">
+                            <input type="hidden" name="IdRaceChien" value="@item.IdRaceChien" />
+                            <button type="submit" class="btn btn-primary">Modifier</button>
+                        </form>
+                        <form asp-action="Delete" method="get" style="display:inline;">
+                            <input type="hidden" name="IdRaceChien" value="@item.IdRaceChien" />
+                            <button type="submit" class="btn btn-danger">Supprimer</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

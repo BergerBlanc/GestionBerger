@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionBerger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65c18110333abf17e91e94db94d4afb7be235804")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionBerger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionBerger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

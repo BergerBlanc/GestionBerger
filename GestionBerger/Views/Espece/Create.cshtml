@@ -1,31 +1,42 @@
-﻿@model GestionBerger.Models.Espece
+﻿@model GestionBerger.Models.Departement
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Ajouter";
 }
 
-<h1>Create</h1>
+<h1>Ajout de couleurs</h1>
 
-<h4>Espece</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NomEspece" class="control-label"></label>
-                <input asp-for="NomEspece" class="form-control" />
-                <span asp-validation-for="NomEspece" class="text-danger"></span>
+                <label asp-for="NomDepartement" class="control-label">Nom de la Departement</label>
+                <input asp-for="NomDepartement" class="form-control" />
+                <span asp-validation-for="NomDepartement" class="text-danger"></span>
             </div>
+            <br/>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Ajouter" class="btn btn-success" /> 
+                <button type="submit" class="btn btn-info">Précédent</button>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    @* <form asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Précédent</button>
+    </form> *@
+    
+</div>
+<div>
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-secondary">Menu Principal</button>
+    </form>
 </div>
 
 @section Scripts {

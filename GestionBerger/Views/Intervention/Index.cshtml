@@ -1,35 +1,53 @@
-﻿@model IEnumerable<GestionBerger.Models.Intervention>
+﻿@model IEnumerable<GestionBerger.Models.Couleur>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Gestion des Couleurs</h1>
+<br/>
+<div>
+    <form asp-action="Create" method="get" style="display:inline;">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+        <button type="submit" class="btn btn-success">Nouvelle Couleur</button>
+    </form>
+</div>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NomIntervention)
-            </th>
-            <th></th>
+            
+            <th>Nom de la Couleur</th>
         </tr>
     </thead>
+    <br/>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomIntervention)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdIntervention">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdIntervention">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdIntervention">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                
+                <td>@item.NomCouleur</td>
+                <td>
+                    <form asp-action="Edit" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCouleur" value="@item.IdCouleur" />
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                    </form>
+
+                    
+                    <form asp-action="Delete" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCouleur" value="@item.IdCouleur" />
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+        
+        }
     </tbody>
 </table>
+
+<div>
+    
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+
+        <button type="submit" class="btn btn-info">Menu Principal</button>
+    </form>
+</div>
