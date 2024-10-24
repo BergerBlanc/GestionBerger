@@ -1,22 +1,22 @@
-﻿@model GestionBerger.Models.Couleur
+﻿@model GestionBerger.Models.Intervention
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Modifications</h1>
 
-<h4>Couleur</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdCouleur" />
+            <input type="hidden" asp-for="IdIntervention" />
             <div class="form-group">
-                <label asp-for="NomCouleur" class="control-label"></label>
-                <input asp-for="NomCouleur" class="form-control" />
-                <span asp-validation-for="NomCouleur" class="text-danger"></span>
+                <label asp-for="NomIntervention" class="control-label">Nom d'Intervention</label>
+                <input asp-for="NomIntervention" class="form-control" />
+                <span asp-validation-for="NomIntervention" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Enregistrer" class="btn btn-success" />

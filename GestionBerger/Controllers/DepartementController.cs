@@ -1,8 +1,8 @@
-﻿using GestionBerger.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
+using GestionBerger.Models;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace GestionBerger.Controllers
 {
@@ -48,19 +48,15 @@ namespace GestionBerger.Controllers
 
             conn.Close();
             return View(listeDepartements);
+
         }
 
-            // GET: DepartementController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
 
         // GET: DepartementController/Create
         public ActionResult Create()
         {
-            Departement d = new Departement();
-            return View(d);
+            Departement c = new Departement();
+            return View(c);
         }
 
         // POST: DepartementController/Create
@@ -98,44 +94,131 @@ namespace GestionBerger.Controllers
         }
 
         // GET: DepartementController/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int IdDepartement)
         {
-            return View();
+            SqlConnection conn;
+            SqlCommand cmd;
+            SqlDataReader reader;
+            Departement departement = new Departement();
+
+            connectionString = configuration.GetConnectionString("defaultConnection");
+            conn = new SqlConnection(connectionString);
+            cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "GetDepartementById";
+            cmd.Parameters.Add(new SqlParameter("@IdDepartement", IdDepartement));
+
+            cmd.Connection = conn;
+
+            conn.Open();
+            reader = cmd.ExecuteReader();
+
+
+            while (reader.Read())
+            {
+
+                departement.IdDepartement = reader.GetInt32("IdDepartement");
+                departement.NomDepartement = reader.GetString("NomDepartement");
+
+            }
+
+            conn.Close();
+            return View(departement);
         }
 
         // POST: DepartementController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int IdDepartement, Departement departement)
         {
             try
             {
+                SqlConnection conn;
+                SqlCommand cmd;
+
+                connectionString = configuration.GetConnectionString("defaultConnection");
+                conn = new SqlConnection(connectionString);
+                cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "UpdateDepartement";
+
+                // Ajout des paramètres à la commande
+
+                cmd.Parameters.Add(new SqlParameter("@IdDepartement", IdDepartement));
+                cmd.Parameters.Add(new SqlParameter("@NomDepartement", departement.NomDepartement));
+
+                cmd.Connection = conn;
+
+                conn.Open();
+                int rowCount = cmd.ExecuteNonQuery();
+                conn.Close();
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(departement);
             }
         }
 
         // GET: DepartementController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int IdDepartement)
         {
-            return View();
+            SqlConnection conn;
+            SqlCommand cmd;
+            SqlDataReader reader;
+            Departement departement = new Departement();
+
+            connectionString = configuration.GetConnectionString("defaultConnection");
+            conn = new SqlConnection(connectionString);
+            cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "GetDepartementById";
+            cmd.Connection = conn;
+            cmd.Parameters.Add(new SqlParameter("@IdDepartement", IdDepartement));
+
+            conn.Open();
+            reader = cmd.ExecuteReader();
+
+
+            if (reader.Read())
+            {
+
+                departement.IdDepartement = reader.GetInt32("IdDepartement");
+                departement.NomDepartement = reader.GetString("NomDepartement");
+
+            }
+
+            conn.Close();
+            return View(departement);
         }
 
         // POST: DepartementController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int IdDepartement, Departement departement)
         {
             try
             {
+                SqlConnection conn;
+                SqlCommand cmd;
+
+                connectionString = configuration.GetConnectionString("defaultConnection");
+                conn = new SqlConnection(connectionString);
+                cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DeleteDepartement";  // Supposant que cette procédure stockée existe pour la suppression
+                cmd.Parameters.Add(new SqlParameter("@IdDepartement", IdDepartement));
+                cmd.Connection = conn;
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(departement);
             }
         }
     }

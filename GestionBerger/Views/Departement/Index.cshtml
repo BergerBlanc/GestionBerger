@@ -4,50 +4,45 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Gestion des Departements</h1>
-<br/>
+<h1>Gestion des Départements</h1>
+<br />
 <div>
     <form asp-action="Create" method="get" style="display:inline;">
-
-        <button type="submit" class="btn btn-success">Nouvelle Departement</button>
+        <button type="submit" class="btn btn-success">Nouveau Département</button>
+    </form>
+    <form asp-controller="Administration" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-info">Précédent</button>
+    </form>
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-secondary">Menu Principal</button>
     </form>
 </div>
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th>Nom de Departement</th>
-        </tr>
-    </thead>
-    <br/>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                
-                <td>@item.NomDepartement</td>
-                <td>
-                    <form asp-action="Edit" method="get" style="display:inline;">
-                        <input type="hidden" name="IdDepartement" value="@item.IdDepartement" />
-                        <button type="submit" class="btn btn-primary">Modifier</button>
-                    </form>
 
-                    
-                    <form asp-action="Delete" method="get" style="display:inline;">
-                        <input type="hidden" name="IdDepartement" value="@item.IdDepartement" />
-                        <button type="submit" class="btn btn-danger">Supprimer</button>
-                    </form>
-                </td>
+<!-- Table header and scrolling body -->
+<div class="scrollable-table">
+    <table class="table">
+        <thead class="custom-thead">
+            <tr class="custom-tr">
+                <th>Nom du Département</th>
             </tr>
-        
-        }
-    </tbody>
-</table>
-
-<div>
-    
-    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
-
-        <button type="submit" class="btn btn-info">Menu Principal</button>
-    </form>
+        </thead>
+        <tbody class="custom-tbody">
+            @foreach (var item in Model)
+            {
+                <tr class="custom-tr">
+                    <td>@item.NomDepartement</td>
+                    <td>
+                        <form asp-action="Edit" method="get" style="display:inline;">
+                            <input type="hidden" name="IdDepartement" value="@item.IdDepartement" />
+                            <button type="submit" class="btn btn-primary">Modifier</button>
+                        </form>
+                        <form asp-action="Delete" method="get" style="display:inline;">
+                            <input type="hidden" name="IdDepartement" value="@item.IdDepartement" />
+                            <button type="submit" class="btn btn-danger">Supprimer</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

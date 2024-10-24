@@ -1,10 +1,10 @@
-﻿@model GestionBerger.Models.Couleur
+﻿@model GestionBerger.Models.EtatSante
 
 @{
     ViewData["Title"] = "Ajouter";
 }
 
-<h1>Ajout de couleurs</h1>
+<h1>Ajout d'États de Santés</h1>
 
 <hr />
 <div class="row">
@@ -12,9 +12,9 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NomCouleur" class="control-label">Nom de la Couleur</label>
-                <input asp-for="NomCouleur" class="form-control" />
-                <span asp-validation-for="NomCouleur" class="text-danger"></span>
+                <label asp-for="NomEtatSante" class="control-label">Nom de l'État de Santé</label>
+                <input asp-for="NomEtatSante" class="form-control" />
+                <span asp-validation-for="NomEtatSante" class="text-danger"></span>
             </div>
             <br/>
             <div class="form-group">
@@ -26,7 +26,7 @@
 </div>
 
 <div>
-    @* <form asp-action="Index" method="get" style="display:inline;">
+    @* <form asp-controller="Administration" asp-action="Index" method="get" style="display:inline;">
 
         <button type="submit" class="btn btn-info">Précédent</button>
     </form> *@

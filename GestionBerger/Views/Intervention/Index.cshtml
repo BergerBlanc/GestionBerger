@@ -1,53 +1,48 @@
-﻿@model IEnumerable<GestionBerger.Models.Couleur>
+﻿@model IEnumerable<GestionBerger.Models.Intervention>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Gestion des Couleurs</h1>
-<br/>
+<h1>Gestion des Interventions</h1>
+<br />
 <div>
     <form asp-action="Create" method="get" style="display:inline;">
-
-        <button type="submit" class="btn btn-success">Nouvelle Couleur</button>
+        <button type="submit" class="btn btn-success">Nouvelle Intervention</button>
+    </form>
+    <form asp-controller="Administration" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-info">Précédent</button>
+    </form>
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-secondary">Menu Principal</button>
     </form>
 </div>
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th>Nom de la Couleur</th>
-        </tr>
-    </thead>
-    <br/>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                
-                <td>@item.NomCouleur</td>
-                <td>
-                    <form asp-action="Edit" method="get" style="display:inline;">
-                        <input type="hidden" name="IdCouleur" value="@item.IdCouleur" />
-                        <button type="submit" class="btn btn-primary">Modifier</button>
-                    </form>
 
-                    
-                    <form asp-action="Delete" method="get" style="display:inline;">
-                        <input type="hidden" name="IdCouleur" value="@item.IdCouleur" />
-                        <button type="submit" class="btn btn-danger">Supprimer</button>
-                    </form>
-                </td>
+<!-- Table header and scrolling body -->
+<div class="scrollable-table">
+    <table class="table">
+        <thead class="custom-thead">
+            <tr class="custom-tr">
+                <th>Nom de l'Intervention</th>
             </tr>
-        
-        }
-    </tbody>
-</table>
-
-<div>
-    
-    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
-
-        <button type="submit" class="btn btn-info">Menu Principal</button>
-    </form>
+        </thead>
+        <tbody class="custom-tbody">
+            @foreach (var item in Model)
+            {
+                <tr class="custom-tr">
+                    <td>@item.NomIntervention</td>
+                    <td>
+                        <form asp-action="Edit" method="get" style="display:inline;">
+                            <input type="hidden" name="IdIntervention" value="@item.IdIntervention" />
+                            <button type="submit" class="btn btn-primary">Modifier</button>
+                        </form>
+                        <form asp-action="Delete" method="get" style="display:inline;">
+                            <input type="hidden" name="IdIntervention" value="@item.IdIntervention" />
+                            <button type="submit" class="btn btn-danger">Supprimer</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

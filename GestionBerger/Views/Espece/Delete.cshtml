@@ -1,4 +1,4 @@
-﻿@model GestionBerger.Models.Departement
+﻿@model GestionBerger.Models.Espece
 
 @{
     ViewData["Title"] = "Supprimer";
@@ -6,22 +6,22 @@
 
 <h1>Supprimer</h1>
 
-<h3>Voulez-vous vraiment supprimer cette Departement?</h3>
+<h3>Voulez-vous vraiment supprimer cette Espèce?</h3>
 <div>
-    <h4>Departement</h4>
+    <h4>Espece</h4>
     <hr />
     <dl class="row">
         <dl class="row">
             <dt class="col-sm-2">
-                Nom de la couleur:
+                Nom de l'Espèce:
             </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.NomDepartement)
+                @Html.DisplayFor(model => model.NomEspece)
             </dd>
     </dl>
     <br/>
     <form asp-action="Delete">
-        <input type="hidden" asp-for="IdDepartement" />
+        <input type="hidden" asp-for="IdEspece" />
         <input type="submit" value="Supprimer" class="btn btn-danger"/> 
         <button type="submit" class="btn btn-info">Précédent</button>
     </form>
