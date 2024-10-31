@@ -10,6 +10,24 @@
     <h4>Micropuce</h4>
     <hr />
     <dl class="row">
+       <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumMicropuce)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumMicropuce)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DossierAnimal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DossierAnimal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumContrat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumContrat)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Espece)
         </dt>
@@ -21,6 +39,12 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Race)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Couleur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Couleur)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Sexe)
@@ -35,16 +59,28 @@
             @Html.DisplayFor(model => model.Age)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nom)
+            @Html.DisplayNameFor(model => model.NomAnimal)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nom)
+            @Html.DisplayFor(model => model.NomAnimal)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Proprietaire)
+            @Html.DisplayNameFor(model => model.NomProprietaire)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Proprietaire)
+            @Html.DisplayFor(model => model.NomProprietaire)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone2)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Adresse)
@@ -65,18 +101,6 @@
             @Html.DisplayFor(model => model.CodePostal)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telephone)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telephone)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telephone2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telephone2)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Commentaires)
         </dt>
         <dd class = "col-sm-10">
@@ -85,6 +109,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.NumMicropuce">Edit</a> |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     <a asp-action="Index">Back to List</a>
 </div>

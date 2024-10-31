@@ -6,7 +6,9 @@ namespace GestionBerger.Models
     public class Employe
     {
         [Key]
-        public int matricule {  get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdEmploye { get; set; }
+        public int Matricule {  get; set; }
 
         public string Nom {  get; set; }
         public string NAS { get; set; }
@@ -15,8 +17,8 @@ namespace GestionBerger.Models
         public string CodePostal { get; set; }
         public DateOnly DateEmbauche { get; set; }
         public string Departement { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
+        public string LoginEmploye { get; set; }
+        public string PasswordEmploye { get; set; }
         public string Commentaires { get; set; }
     }
 }

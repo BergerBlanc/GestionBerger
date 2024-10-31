@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GestionBerger
 build_property.RootNamespace = GestionBerger
@@ -112,26 +120,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Departement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Employe/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Employe/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Employe/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Employe/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Employe/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/AEC/Session/Session 5/420-A23-BB PROJET DE FIN D'ÉTUDES/Stage/Projet/GestionBerger/GestionBerger/Views/Espece/Create.cshtml]

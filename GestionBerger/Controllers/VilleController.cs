@@ -40,7 +40,8 @@ namespace GestionBerger.Controllers
                 ville.IdVille = reader.GetInt32("IdVille");
 
                 ville.NomVille = reader.GetString("NomVille");
-
+                ville.Contact = reader.GetString("Contact");
+                ville.Telephone = reader.GetString("Telephone");
                 listeVilles.Add(ville);
             }
 

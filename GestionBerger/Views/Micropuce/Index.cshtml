@@ -13,10 +13,22 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.NumMicropuce)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DossierAnimal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumContrat)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Espece)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Race)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Couleur)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Sexe)
@@ -25,10 +37,16 @@
                 @Html.DisplayNameFor(model => model.Age)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Nom)
+                @Html.DisplayNameFor(model => model.NomAnimal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Proprietaire)
+                @Html.DisplayNameFor(model => model.NomProprietaire)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone2)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Adresse)
@@ -40,12 +58,6 @@
                 @Html.DisplayNameFor(model => model.CodePostal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telephone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telephone2)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Commentaires)
             </th>
             <th></th>
@@ -54,11 +66,24 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.NumMicropuce)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DossierAnimal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumContrat)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Espece)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Race)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Couleur)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Sexe)
@@ -67,10 +92,16 @@
                 @Html.DisplayFor(modelItem => item.Age)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nom)
+                @Html.DisplayFor(modelItem => item.NomAnimal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Proprietaire)
+                @Html.DisplayFor(modelItem => item.NomProprietaire)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone2)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Adresse)
@@ -82,18 +113,12 @@
                 @Html.DisplayFor(modelItem => item.CodePostal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Telephone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telephone2)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Commentaires)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.NumMicropuce">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.NumMicropuce">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.NumMicropuce">Delete</a>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }

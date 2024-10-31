@@ -6,51 +6,36 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+<div>
+    <form asp-action="Create" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-success">Nouvel Animal</button>
+    </form>
+    
+    <form asp-area="" asp-controller="Home" asp-action="Index" method="get" style="display:inline;">
+        <button type="submit" class="btn btn-secondary">Menu Principal</button>
+    </form>
+</div>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Espece)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Race)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Couleur)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sexe)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Medaille)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Micropuce)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EtatSante)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Comportement)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Commentaires)
-            </th>
+            
+            <th>#Dossier</th>
+            <th>Espece</th>
+            <th>Race</th>
+            <th>Couleur</th>
+            <th>Sexe</th>
+            <th>Age</th>
+            
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DossierAnimal)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Espece)
             </td>
@@ -66,29 +51,18 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Age)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Medaille)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Micropuce)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EtatSante)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Comportement)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Commentaires)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DossierAnimal">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DossierAnimal">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DossierAnimal">Delete</a>
-            </td>
+            
+            
+                <td>
+                    <form asp-action="Edit" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCouleur" value="@item.IdAnimal" />
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                    </form>
+                    <form asp-action="Delete" method="get" style="display:inline;">
+                        <input type="hidden" name="IdCouleur" value="@item.IdAnimal" />
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                    </form>
+                </td>
         </tr>
 }
     </tbody>
